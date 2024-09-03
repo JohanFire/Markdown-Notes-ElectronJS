@@ -15,9 +15,10 @@ function createWindow(): void {
     title: 'NoteMark',
     // frame: false,
     // titleBarStyle: 'hidden',
-    vibrancy: 'under-window',
-    visualEffectState: 'active',
+    // vibrancy: 'under-window',
+    // visualEffectState: 'active',
     trafficLightPosition: { x: 15, y: 10 },
+
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: true,
