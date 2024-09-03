@@ -11,6 +11,13 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
+    center: true, // window to be center when opened for the 1st time
+    title: 'NoteMark',
+    // frame: false,
+    // titleBarStyle: 'hidden',
+    vibrancy: 'under-window',
+    visualEffectState: 'active',
+    trafficLightPosition: { x: 15, y: 10 },
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: true,
