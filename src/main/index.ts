@@ -13,8 +13,8 @@ function createWindow(): void {
     ...(process.platform === 'linux' ? { icon } : {}),
     center: true, // window to be center when opened for the 1st time
     title: 'NoteMark',
-    // frame: false,
-    // titleBarStyle: 'hidden',
+    frame: false,
+    titleBarStyle: 'hidden',
     // vibrancy: 'under-window',
     // visualEffectState: 'active',
     trafficLightPosition: { x: 15, y: 10 },
